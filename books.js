@@ -1,13 +1,18 @@
+
 function myBookFunction(){
   var myPhoneno = prompt("Please enter your registered number: ","");
   console.log("&phone="+myPhoneno);
-  xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "searchForDB.php?phone="+myPhoneno ,true);
-  xhttp.send();
- 
-  document.getElementById("tp").innerHTML = "response text: ";
-  console.log("jdsklfjkdsl");
-  console.log(" ");
+  
+  $.ajax({
+    url: "searchForDB.php?phone="+myPhoneno,
+    method: 'GET',
+    type: 'json',
+    success: function(){
+      document.getElementById("tp").innerHTML = "response text: "+xhttp.responseText;    
+    }
+});
+  
+  
 }
 
 function getPrompt(){
