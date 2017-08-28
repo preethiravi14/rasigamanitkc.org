@@ -1,7 +1,5 @@
 <?php
 
-include('Way2SMS-API/way2sms-api.php');
-sendWay2SMS( '9739190565' , 'Gurgaon' , '9035602257' , 'Hi Mohinee');
 
 $host = "148.72.232.182";
 $user= "tkchelliah";
@@ -31,5 +29,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+include('Way2SMS-API/way2sms-api.php');
+sendWay2SMS( '9739190565' , 'Gurgaon' , '.$myPhoneno.' , 'Hi Preethi');
 
 ?>
