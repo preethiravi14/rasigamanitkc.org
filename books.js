@@ -1,10 +1,10 @@
 function myBookFunction(){
+
 var myPhoneno = prompt("Please enter your registered number: ","");
- 
-  console.log("&phone="+myPhoneno);
-  xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "searchForDB.php?phone="+myPhoneno ,true);
-  xhttp.send();
+console.log("&phone="+myPhoneno);
+xhttp = new XMLHttpRequest();
+xhttp.open("GET", "searchForDB.php?phone="+myPhoneno ,true);
+xhttp.send();
 
 }
 
