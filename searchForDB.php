@@ -6,9 +6,7 @@ $user= "tkchelliah";
 $password = "TKCthaththa@1882";
 $database = "tkchelliah_";
 
-$myName = $_GET['name'];
-$myEmail = $_GET['email'];
-$myLocation = $_GET['location'];
+
 $myPhoneno = $_GET['phone'];
 
 // Create connection
@@ -20,8 +18,9 @@ if ($conn->connect_error) {
 } 
 echo "Connected";
 
-$sql = "INSERT INTO Rasigamani_TKC_download_details(name, email,location,phone_no) VALUES ('".$myName."','".$myEmail."','".$myLocation."','".$myPhoneno."')";
- 
+$sql = "SELECT name from Rasigamani_TKC_download_details where phone_no ='".$myPhoneno."'";
+
+
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
