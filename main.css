@@ -1,7 +1,19 @@
 .topnav{
 text-align: top left;
 }
-
+p {
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-align: justify;
+    font-size: 15px;
+    border-radius: 5px;
+    outline-style: solid #9fa9a3;
+    outline-width: 1px;
+    background: #f0f0f0;
+    padding: 20px;
+    overflow: hidden;
+}
 pre{
  box-sizing:border-box;
  -moz-box-sizing:border-box;
@@ -79,13 +91,14 @@ text-align: justify;
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
+    position: fixed;
+    top: 50px;
     right: 35px;
-    color: #f1f1f1;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    opacity: 1;
 }
 
 .close:hover,
