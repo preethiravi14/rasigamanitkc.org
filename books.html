@@ -177,14 +177,13 @@
       <div class="modal-header">
         <h5 class="modal-title">Please enter your phone number so that we can invite you</h5>
          <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
-
         </button>
       </div>
       <div class="modal-body">
-       <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">Phone Number</span>
-  <input id="password_textbox" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
-</div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Phone Number</span>
+          <input id="password_textbox" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+        </div>
       </div>
       <div class="modal-footer">
         <button id="save" type="button" class="btn btn-primary">Save changes</button>
@@ -194,6 +193,40 @@
   </div>
 </div>
 
+
+<div id="detailsModal" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Hi there, it seems you are new here! Please enter your details</h5>
+         <span class="close" onclick="document.getElementById('detailsModal').style.display='none'" style="color: #fff;">x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon2">OTP</span>
+          <input id="otp" type="text" class="form-control" placeholder="otp" aria-label="otp" aria-describedby="basic-addon2" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">Name</span>
+          <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon3" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon4">Email</span>
+          <input id="email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon4" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon5">Location</span>
+          <input id="location" type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon5" required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="saveDetails" type="button" class="btn btn-primary">Save changes</button>
+        <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
