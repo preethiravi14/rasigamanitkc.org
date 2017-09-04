@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!Doctype html>
 <html lang="ta">
 
@@ -92,4 +93,100 @@ function getPrompt(){
   alert("thank you "+ myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno);
 }
 </script>  
+=======
+﻿<!Doctype html>
+<html lang="ta">
+
+<title>Rasigamani TKC</title>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="books.css">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ரசிகமணி டி.கே.சி.</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="main.html">முகப்பு 1</a></li>
+<li><a href="quotes.html">மேற்கோள் 2</a></li>
+<li><a href="books.html" id="books">BOOKS</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="interviews.html">நேர்காணல் 3</a></li>
+<li><a href="links.html">இணைப்பு 4</a></li>
+<li><a href="otherbooks.html">OTHER BOOKS</a></li>
+<li><a href="contactus.html">தொடர்புக்கு 5</a></li>
+<li><img src="TKC.png" style="width:36px;height:50px;"></a></li>
+    </ul>
+  </div>
+</nav>
+<p style="color:white;">Rasigamani TKC</p>							
+</head>
+
+
+<body>
+
+<button id="book1" onclick="getPrompt()">
+<a href="https://drive.google.com/open?id=0BwSn8PaurAvpNDVWN2IybU5FM3c" > book</a></button>
+
+<br>
+<br>
+<div class="col-md-12">
+<table>
+  
+    <tr>
+      <th>Category</th>
+      <th>Title </th>
+      <th>Author </th>
+      <th>Publisher </th>
+      <th>Description </th>
+      <th>Book Samples</th>
+      <th>View/Download Book</th>
+    </tr>
+    <tr>
+      <td>டி கே சி எழுதிய நூல்</td>
+      <td>அற்புத ரஸம்</td>
+      <td>ரசிகமணி டி கே சி </td>
+      <td>புது மலர் நிலையம் </td>
+      <td>கட்டுரை</td>
+      <td></td>
+      <td><button id="book1" onclick="getPrompt()">
+<a href="https://drive.google.com/open?id=0BwSn8PaurAvpNDVWN2IybU5FM3c" > book</a></button></td>
+    </tr>
+    <tr>
+      <td>டி கே சி எழுதிய நூல்</td>
+      <td>இதய ஒலி</td>
+      <td>ரசிகமணி டி கே சி </td>
+      <td>புதுமைப் பதிப்பகம்</td>
+      <td>கட்டுரைகள்</td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+      
+   
+</div>
+</table>
+</body>
+<script type="text/javascript"> 
+
+function getPrompt(){
+  var myName = prompt("Name Here:","");
+  var myEmail = prompt("Email Here:","");
+  var myLocation = prompt("Location Here:",""); 
+  var myPhoneno = prompt("phoneno Here:","");
+  console.log(myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno);
+  xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "saveToDb.php?email="+myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno ,true);
+  xhttp.send();
+
+  alert("thank you "+ myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno);
+}
+</script>  
+>>>>>>> 8372662527c340ce22b349f523b5b0e48020a815
 </html>

@@ -1,53 +1,48 @@
+function myBookFunction(id){
+    var modal = document.getElementById('myModal');
+    modal.style.display = "block";
+    var span = document.getElementsByClassName("close")[0];
 
-function myBookFunction(){
-  var myPhoneno = prompt("Please enter your number: ","");
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }  
+  var save = document.getElementById("save");
+  var myPhoneno = document.getElementById('password_textbox').value;
   console.log(" phone= "+myPhoneno);
+  event.preventDefault();
   $.ajax({
     url: "searchForDb.php?phone="+myPhoneno,
     method: 'GET',
     type: 'json',
     success: function(data){
       if(data == 'success'){
-        console.log("success");
+        window.location.href = 'https://drive.google.com/open?id='+id;
       }else{
-        console.log("Error on query!");
-        getPrompt(myPhoneno);
+        getPrompt(myPhoneno, id);
       }
     }
-  });
+  }); 
 }
 
-function auth(){
-  var value = "; " + document.cookie;
-  var parts = value.split("; PHPSESSID=");
-  if (parts.length == 2){
-   return parts.pop().split(";").shift();
-  }else{
-    myBookFunction();
-  }
-}
 
-function getPrompt(myPhoneno){
+function getPrompt(myPhoneno, id){
+  var otp = prompt("otp Here:","");
   var myName = prompt("Name Here:","");
   var myEmail = prompt("Email Here:","");
   var myLocation = prompt("Location Here:",""); 
-  var otp = prompt("otp Here:","");
-  console.log("email= "+ myEmail+" name= "+myName+" location= "+myLocation+" phone= "+myPhoneno+" otp= "+otp);
   $.ajax({
     url: "saveToDb.php?email="+myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno+"&otp="+otp,
     method: 'GET',
     type: 'json',
     success: function(data){
-      if(data == 'Success'){
-        console.log("Thank you for subscribing again!");
-        //location.href = "books1.html";
-        return parts.pop().split(";").shift();
+      console.log(data);
+      if(data == 'success'){
+        window.location.href = 'https://drive.google.com/open?id='+id;
     }else{
-        console.log("Error on query!");
-        getPrompt(myPhoneno);
-
+        console.log("Something went wrong. Please try again!");
     }
   }
 });
-  alert("thank you the email= "+ myEmail+" name= "+myName+" location= "+myLocation+" phone= "+myPhoneno);
 }
+
