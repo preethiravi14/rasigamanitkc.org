@@ -1,12 +1,7 @@
 <?php
-/*$host = "148.72.232.182";
+host = "148.72.232.182";
 $user= "tkchelliah";
 $password = "TKCthaththa@1882";
-$database = "tkchelliah_";
-*/
-$host = "localhost:8889";
-$user= "root";
-$password = "root";
 $database = "tkchelliah_";
 
 $myName = $_GET['name'];
