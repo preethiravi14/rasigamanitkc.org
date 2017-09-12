@@ -1,5 +1,5 @@
 <?php
-$host = "148.72.232.182";
+host = "148.72.232.182";
 $user= "tkchelliah";
 $password = "TKCthaththa@1882";
 $database = "tkchelliah_";
@@ -24,8 +24,9 @@ if($myEmail == Null || $myName == Null || $myLocation == NULL || $myPhoneno == N
 }
 
 $sql = "UPDATE Rasigamani_TKC_download_details SET name = '".$myName."', email = '".$myEmail."',location = '".$myLocation."' WHERE phone_no = $myPhoneno AND otp = $otp";
+
 $query =  mysqli_query($conn, $sql);
-if ($query == 1 ) {
+if (mysqli_affected_rows($conn) > 0) {
 	echo "success";
 } else {
     echo "Error while updaing db: " . $sql . "<br>" . $conn->error;
