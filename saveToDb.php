@@ -1,22 +1,11 @@
 <?php
-$host = "148.72.232.182";
-$user= "tkchelliah";
-$password = "TKCthaththa@1882";
-$database = "tkchelliah_";
+require_once('config.php');
 
 $myName = $_GET['name'];
 $myEmail = $_GET['email'];
 $myLocation = $_GET['location'];
 $myPhoneno = $_GET['phone'];
 $otp = $_GET['otp'];
-
-// Create connection
-$conn = new mysqli($host, $user, $password, $database);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
 
 if($myEmail == Null || $myName == Null || $myLocation == NULL || $myPhoneno == Null || $otp == Null || $myEmail == "null" || $myName == "null" || $myLocation == "null" || $myPhoneno == "null" || $otp == "null"){
 	echo "Missing required parameters";
@@ -27,6 +16,13 @@ $sql = "UPDATE Rasigamani_TKC_download_details SET name = '".$myName."', email =
 
 $query =  mysqli_query($conn, $sql);
 if (mysqli_affected_rows($conn) > 0) {
+	$sql = "SELECT * from Rasigamani_TKC_download_details where phone_no =$myPhoneno";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0 ) {
+		while($row = $result->fetch_assoc()) {
+	        setcookie("user", $row['id'], time() + (86400 * 30));
+	    }
+	}
 	echo "success";
 } else {
     echo "Error while updaing db: " . $sql . "<br>" . $conn->error;

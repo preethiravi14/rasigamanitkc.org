@@ -1,96 +1,181 @@
-﻿
-<!Doctype html>
+﻿<!Doctype html>
 <html lang="ta">
 
 <title>Rasigamani TKC</title>
+<script type="text/javascript" src="books.js"> 
+</script>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="books.css">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">ரசிகமணி டி.கே.சி.</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-<li class="active"><a href="main.html">முகப்பு 1</a></li>
-<li><a href="quotes.html">மேற்கோள் 2</a></li>
-<li><a href="books.html" id="books">BOOKS</a></li>
-<li><a href="gallery.html">GALLERY</a></li>
-<li><a href="interviews.html">நேர்காணல் 3</a></li>
-<li><a href="links.html">இணைப்பு 4</a></li>
-<li><a href="otherbooks.html">OTHER BOOKS</a></li>
-<li><a href="contactus.html">தொடர்புக்கு 5</a></li>
-<li><img src="TKC.png" style="width:36px;height:50px;"></a></li>
-    </ul>
-  </div>
-</nav>
-<p style="color:white;">Rasigamani TKC</p>							
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ரசிகமணி டி.கே.சி.</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="main.html">முகப்பு 1</a></li>
+                <li><a href="quotes.html">மேற்கோள் 2</a></li>
+                <li><a href="books.html" id="books">BOOKS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="interviews.html">நேர்காணல் 3</a></li>
+                <li><a href="links.html">இணைப்பு 4</a></li>
+                <li><a href="otherbooks.html">OTHER BOOKS</a></li>
+                <li><a href="contactus.html">தொடர்புக்கு 5</a></li>
+                <li><img src="TKC.png" style="width:36px;height:50px;"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p style="color:white;">Rasigamani TKC</p>
 </head>
-
 
 <body>
 
-<button id="book1" onclick="getPrompt()">
-<a href="https://drive.google.com/open?id=0BwSn8PaurAvpNDVWN2IybU5FM3c" > book</a></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover table-responsive table-bordered text-center table-condensed" style="color:black;">
 
-<br>
-<br>
-<div class="col-md-12">
-<table>
-  
-    <tr>
-      <th>Category</th>
-      <th>Title </th>
-      <th>Author </th>
-      <th>Publisher </th>
-      <th>Description </th>
-      <th>Book Samples</th>
-      <th>View/Download Book</th>
-    </tr>
-    <tr>
-      <td>டி கே சி எழுதிய நூல்</td>
-      <td>அற்புத ரஸம்</td>
-      <td>ரசிகமணி டி கே சி </td>
-      <td>புது மலர் நிலையம் </td>
-      <td>கட்டுரை</td>
-      <td></td>
-      <td><button id="book1" onclick="getPrompt()">
-<a href="https://drive.google.com/open?id=0BwSn8PaurAvpNDVWN2IybU5FM3c" > book</a></button></td>
-    </tr>
-    <tr>
-      <td>டி கே சி எழுதிய நூல்</td>
-      <td>இதய ஒலி</td>
-      <td>ரசிகமணி டி கே சி </td>
-      <td>புதுமைப் பதிப்பகம்</td>
-      <td>கட்டுரைகள்</td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-      
-   
-</div>
-</table>
+                    <tr class="active">
+                        <th>S No.</th>
+                        <th>Category</th>
+                        <th>Title </th>
+                        <th>Author </th>
+                        <th>Publisher </th>
+                        <th>Description </th>
+                        <th>Book Samples</th>
+                        <th>View / Download Book</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>அற்புத ரஸம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புது மலர் நிலையம் </td>
+                        <td>கட்டுரை</td>
+                        <td></td>
+                        <td>
+                            <button id="book1" onclick="addBookDetails(1,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>இதய ஒலி</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புதுமைப் பதிப்பகம்</td>
+                        <td>கட்டுரைகள்</td>
+                        <td></td>
+                        <td>
+                            <button id="book2" onclick="addBookDetails(2,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>கம்பர் யார்?</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>பொதிகை மலைப் பதிப்பு</td>
+                        <td>கம்பர் பற்றிய கட்டுரைகள்</td>
+                        <td></td>
+                        <td>
+                            <button id="book3" onclick="addBookDetails(3,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>டி கே சி பதிப்பித்த நூல்</td>
+                        <td>கம்பர் தரும் ராமாயணம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>பொதிகை மலைப் பதிப்பு</td>
+                        <td>கம்பராமாயணம்- விளக்கம்</td>
+                        <td></td>
+                        <td>
+                            <button id="book4" onclick="addBookDetails(4,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>டி கே சி பதிப்பித்த நூல்</td>
+                        <td>முத்தொள்ளாயிரம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புதுமைப் பதிப்பகம்</td>
+                        <td>கவிதை விளக்கம்</td>
+                        <td></td>
+                        <td>
+                            <button id="book5" onclick="addBookDetails(5,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>அற்புத ரஸம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புது மலர் நிலையம் </td>
+                        <td>கட்டுரை</td>
+                        <td></td>
+                        <td>
+                            <button id="book6" onclick="addBookDetails(6,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>இதய ஒலி</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புதுமைப் பதிப்பகம்</td>
+                        <td>கட்டுரைகள்</td>
+                        <td></td>
+                        <td>
+                            <button id="book7" onclick="addBookDetails(7,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>டி கே சி எழுதிய நூல்</td>
+                        <td>கம்பர் யார்?</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>பொதிகை மலைப் பதிப்பு</td>
+                        <td>கம்பர் பற்றிய கட்டுரைகள்</td>
+                        <td></td>
+                        <td>
+                            <button id="book8" onclick="addBookDetails(8,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>டி கே சி பதிப்பித்த நூல்</td>
+                        <td>கம்பர் தரும் ராமாயணம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>பொதிகை மலைப் பதிப்பு</td>
+                        <td>கம்பராமாயணம்- விளக்கம்</td>
+                        <td></td>
+                       <td>
+                            <button id="book9" onclick="addBookDetails(9,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>டி கே சி பதிப்பித்த நூல்</td>
+                        <td>முத்தொள்ளாயிரம்</td>
+                        <td>ரசிகமணி டி கே சி </td>
+                        <td>புதுமைப் பதிப்பகம்</td>
+                        <td>கவிதை விளக்கம்</td>
+                        <td></td>
+                       <td>
+                            <button id="book10" onclick="addBookDetails(10,'0BwSn8PaurAvpNDVWN2IybU5FM3c')">book</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </body>
-<script type="text/javascript"> 
-
-function getPrompt(){
-  var myName = prompt("Name Here:","");
-  var myEmail = prompt("Email Here:","");
-  var myLocation = prompt("Location Here:",""); 
-  var myPhoneno = prompt("phoneno Here:","");
-  console.log(myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno);
-  xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "saveToDb.php?email="+myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno ,true);
-  xhttp.send();
-
-  alert("thank you "+ myEmail+"&name="+myName+"&location="+myLocation+"&phone="+myPhoneno);
-}
-</script>  
 </html>
