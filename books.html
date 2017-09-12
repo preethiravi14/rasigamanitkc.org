@@ -1,3 +1,4 @@
+﻿
 <!Doctype html>
 <html lang="ta">
 
@@ -63,11 +64,11 @@
       <td>டி கே சி எழுதிய நூல்</td>
       <td>அற்புத ரஸம்</td>
       <td>ரசிகமணி டி கே சி </td>
-      <td>புது மலர் நிலையம் </td>
+      <td>புது மலர் நிலையம் </td>
       <td>கட்டுரை</td>
       <td></td>
       <td>
-        <button id="book1" >book</button></td>
+        <button id="book1" onclick="myBookFunction('0BwSn8PaurAvpNDVWN2IybU5FM3c')" >book</button></td>
     </tr>
     <tr>
     <th>2</th>
@@ -114,7 +115,7 @@
       <td>டி கே சி எழுதிய நூல்</td>
       <td>அற்புத ரஸம்</td>
       <td>ரசிகமணி டி கே சி </td>
-      <td>புது மலர் நிலையம் </td>
+      <td>புது மலர் நிலையம் </td>
       <td>கட்டுரை</td>
       <td></td>
       <td>
@@ -175,25 +176,58 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Please enter your password so that we can invite you</h5>
+        <h5 class="modal-title">Please enter your phone number so that we can invite you</h5>
          <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
-
         </button>
       </div>
       <div class="modal-body">
-       <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">Password</span>
-  <input id="password_textbox" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-</div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Phone Number</span>
+          <input id="password_textbox" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="myBookFunction('0BwSn8PaurAvpNDVWN2IybU5FM3c')">Save changes</button>
+        <button id="save" type="button" class="btn btn-primary">Save changes</button>
         <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
+
+<div id="detailsModal" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Hi there, it seems you are new here! Please enter your details</h5>
+         <span class="close" onclick="document.getElementById('detailsModal').style.display='none'" style="color: #fff;">x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon2">OTP</span>
+          <input id="otp" type="text" class="form-control" placeholder="otp" aria-label="otp" aria-describedby="basic-addon2" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3">Name</span>
+          <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon3" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon4">Email</span>
+          <input id="email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon4" required>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon5">Location</span>
+          <input id="location" type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon5" required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="saveDetails" type="button" class="btn btn-primary">Save changes</button>
+        <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -202,26 +236,6 @@
     </script>
     <script>
        
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('book1');
-        var modalImg = document.getElementById("password_textbox");
-        var captionText = document.getElementById("caption");
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            //captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
     </script>
 </body>
 

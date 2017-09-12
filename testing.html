@@ -1,123 +1,30 @@
-<div class="container text-center">
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
 
-<h1> Click Me </h1>
-<!-- Large modal -->
-<button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+</style>
+</head>
+<body>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div id="myslider" class="carousel slide" data-ride="carousel" >
-        <!-- indicators dont nav --> 
-        <ol class="carousel-indicators">
-          
-          <li data-target="#myslider" data-slide-to="0" class="active"></li>
-          <li data-target="#myslider" data-slide-to="1"></li>
-          <li data-target="#myslider" data-slide-to="2"></li>
-        </ol>
-
-        <!-- wrapper for slides-->
-        <div class="carousel-inner" role="listbox"> 
-          <div class="item active">
-            <img  src="images/gallery/Image1.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image2.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image3.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image4.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image5.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image6.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image7.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image8.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image9.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image10.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image11.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image12.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image13.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          <div class="item">
-            <img  src="images/gallery/Image14.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-          
-          <div class="item">
-            <img  src="images/gallery/Image15.jpg" alt="gallery picture"/>
-            <div class="carousel-caption">
-              <h1>something</h1>
-            </div>
-          </div>
-        </div>
-        <!-- controls or next and prev buttons -->
-        <a class="left carousel-control" href="#myslider" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#myslider" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-      </div>
-  </div>
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div> 
 </div>
-</div>
+
+</body>
+</html>

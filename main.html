@@ -1,53 +1,63 @@
 ﻿
-<!Doctype html>
+
+<!DOCTYPE html>
 <html lang="ta">
 
 <title>Rasigamani TKC</title>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="name" content="Bootstrap Auto-Hiding Navbar">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js">
+    <link rel="icon" href="Tkc.png" sizes="16x16" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
     
     <div style="color:white;">Rasigamani TKC</div>
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+<body onload="getLocation()">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">ரசிகமணி டி.கே.சி.</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only"> Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+                <a class="navbar-brand" style="text-align:center;" href="#">Rasigamani TKC<br>ரசிகமணி டி.கே.சி.</a>
             </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-hover">
-                <li><a href="main.html">முகப்பு 1</a></li>
-                <li><a href="quotes.html">மேற்கோள் 2</a></li>
-                <li><a href="books.html" onclick="myBookFunction()">BOOKS</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="interviews.html">நேர்காணல் 3</a></li>
-                <li><a href="links.html">இணைப்பு 4</a></li>
-                <li><a href="otherbooks.html">OTHER BOOKS</a></li>
-                <li><a href="contactus.html">தொடர்புக்கு 5</a></li>
-                <li><img src="TKC.png" style="width:36px;height:50px;">
+                <li><a href="main.html" style="text-align:center;">Main<br>முகப்பு</a></li>
+                <li><a href="quotes.html" style="text-align:center;">Quotes<br>மேற்கோள்</a></li>
+                <li><a href="books.html" style="text-align:center;">Books<br>புத்தகங்கள்</a></li>
+                <li><a href="gallery.html" style="text-align:center;">Gallery<br>புகைப்படங்கள்</a></li>
+                <li><a href="interviews.html" style="text-align:center;">Interviews<br>நேர்காணல்</a></li>
+                <li><a href="links.html" style="text-align:center;">Links<br>இணைப்பு</a></li>
+                <li><a href="contactus.html" style="text-align:center;">Contact US<br>தொடர்புக்கு</a></li>
+                <li><img src="TKC.png" style="width:60px;height:63px;">
                 </li>
             </ul>
+            </div>
         </div>
     </nav>
     <br>
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-push-8">
-                <div class="affix">
+        <div class="col-lg-12">
+            <div class="col-lg-4 col-lg-push-8">
+                <div class="affix-right">
                     <div style="float:right;">
                       <br><br>
-                      <img id="myImg" src="Picture.jpg" style="float:center;width:333px;height:333px;clear:both;" class="img-responsive">
+                      <img id="myImg" src="images/main_photo.jpg" style="float:center;width:397px;height:420px;clear:both;" class="img-responsive">
 
-                      <br>
-                      <br>
+                      
                       <br>
                       <audio controls style="width: 370px;float:right;">
                         <source src="tkc-audio.mp3" type="audio/mpeg"> Your browser does not support the audio element.
@@ -57,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 col-md-pull-4">
+            <div class="col-lg-8 col-lg-pull-4">
               <br><br>
               <p class="text-justify"> <span style="font-weight: bold;">"தமிழருக்குத்
                 <br>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp      தமிழே 
@@ -115,6 +125,7 @@
                 <br>
                 <br> "டி.கே.சி. என்று ஒருவன் இருந்தான். அவன் ' தமிழைப் போன்ற உயர்ந்த மொழி உலகத்திலேயே கிடையாது. கம்பரைப் போன்ற உயர்ந்த கவிஞன் உலக இலக்கியத்தில் கிடையாது' என்று சொல்லுவான் என்பதை நீங்கள் சொல்லிக் கொண்டே இருக்க வேண்டும். மற்றவர்களையும் சொல்லச் செய்ய வேண்டும். 500 ஆண்டுகள் அல்லது, 1000 ஆண்டுகள் கழிந்த பின்னாவது நான் சொன்னதை உண்மை என்று உலகமே ஒப்புக்கொள்ளும்"</p>
             </div>
+            </div>
         </div>
     </div>
     <div id="myModal" class="modal">
@@ -123,7 +134,7 @@
         <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
 
         <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+        <img class="modal-content" id="img01" style="width:90%;height:90%">
 
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
@@ -163,7 +174,31 @@
         span.onclick = function() {
             modal.style.display = "none";
         }
-    </script>
 
+
+
+        $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+    </script>
+    <script src="//cdn.virtuosoft.eu/virtuosoft.eu/resources/jquery.bootstrap-autohidingnavbar.min.js"></script>
+<script src="/code/bootstrap-dropdown-hover/bootstrap-dropdown-hover/v1.0.0/jquery.bootstrap-dropdown-hover.js"></script>
+ <p id="demo"></p>
+   <script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
 </body>
 </html>

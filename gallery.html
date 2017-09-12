@@ -1,51 +1,67 @@
-﻿<!Doctype html>
+
+<!DOCTYPE html>
 <html lang="ta">
 
 <title>Rasigamani TKC</title>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="main.css">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">ரசிகமணி டி.கே.சி.</a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="main.html">முகப்பு 1</a></li>
-        <li><a href="quotes.html">மேற்கோள் 2</a></li>
-        <li><a href="books.html">BOOKS</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="interviews.html">நேர்காணல் 3</a></li>
-        <li><a href="links.html">இணைப்பு 4</a></li>
-        <li><a href="otherbooks.html">OTHER BOOKS</a></li>
-        <li><a href="contactus.html">தொடர்புக்கு 5</a></li>
-        <li><img src="TKC.png" style="width:36px;height:50px;"></a></li>
-      </ul>
-    </div>
-  </nav>
-  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="name" content="Bootstrap Auto-Hiding Navbar">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js">
+    <link rel="icon" href="Tkc.png" sizes="16x16" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <div style="color:white;">Rasigamani TKC</div>
 </head>
-<body><br><br><br>
-<h2 style="text-align:center; color:grey;  ">Please click on the photo for slide show</h2><br><br><br>
+
+<body onload="getLocation()">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only"> Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+                <a class="navbar-brand" style="text-align:center;" href="#">Rasigamani TKC<br>ரசிகமணி டி.கே.சி.</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-hover">
+                <li><a href="main.html" style="text-align:center;">Main<br>முகப்பு</a></li>
+                <li><a href="quotes.html" style="text-align:center;">Quotes<br>மேற்கோள்</a></li>
+                <li><a href="books.html" style="text-align:center;">Books<br>புத்தகங்கள்</a></li>
+                <li><a href="gallery.html" style="text-align:center;">Gallery<br>புகைப்படங்கள்</a></li>
+                <li><a href="interviews.html" style="text-align:center;">Interviews<br>நேர்காணல்</a></li>
+                <li><a href="links.html" style="text-align:center;">Links<br>இணைப்பு</a></li>
+                <li><a href="contactus.html" style="text-align:center;">Contact US<br>தொடர்புக்கு</a></li>
+                <li><img src="TKC.png" style="width:60px;height:63px;">
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+  <h2 style="text-align:center; color:grey;  ">Please click on the photo for slide show</h2><br><br><br>
   <div class="container-fluid" text-center>
     <div class="row">
       <div class="col-lg-12">
 
-          
 
 
 
-  <div id="myModal" class="modal">
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
 
-    <div class="modal-content"  id="modal_content" style=" align-self: center;  ">
-      <div id="myslider" class="carousel slide" style="width:120%; height:120%; " data-ride="carousel" >
-        <!-- indicators dont nav --> 
+        <div id="myModal" class="modal">
+        <br><br>
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
+
+          <div class="modal-content"  id="modal_content" style=" align-self: center;  ">
+            <div id="myCarousel" class="carousel slide" style="width:120%; height:120%; " data-ride="carousel" >
+              <!-- indicators dont nav --> 
       <!--  <ol class="carousel-indicators">
           
           <li data-target="#myslider" data-slide-to="0" class="active"></li>
@@ -148,105 +164,131 @@
           </div>
         </div>
         <!-- controls or next and prev buttons -->
-        <a class="left carousel-control" href="#myslider" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#myslider" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-   
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+      </div>
     </div>
   </div>
+  <div class="container"  style="align-items:center">
+    <div class="col-lg-6" style="float: left;padding-left: 62px;">
+
+     <center> <img id="modal-pic-1"  src="images/gallery/Image1.jpg" alt="gallery picture" onClick="myFunc(this.id);" style="float:center;align-items: center;" class="img-responsive"> </center>
+     <h3 style="text-align:center;">ரசிகமணியும் கவிமணியும்</h3>
+   </div>
+
+   <div class="col-lg-6" style="float: right;padding-left: 150px;" >
+     <center><img  id="modal-pic-2" src="images/gallery/Image2.jpg" alt="gallery picture" style="float:center;" onClick="myFunc(this.id);" ></center>
+     <h3 style="text-align:center;">ரசிகமணி டி.கே.சி.</h3>
+   </div>
+
+   <br><br><br><br>
+   <div class="col-lg-6" style="float:center; padding-left: 82px;">
+    <center> <img id="modal-pic-3" src="images/gallery/Image3.jpg" alt="gallery picture" onClick="myFunc(this.id);" ></center>
+    <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும் </h3>
+  </div>
+  <div class="col-lg-6" style="float:center;padding-left: 160px;  ">
+   <center><img id="modal-pic-4" src="images/gallery/Image4.jpg" alt="gallery picture" onClick="myFunc(this.id);" > </center>
+   <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும்</h3>
+ </div>
+ <br><br><br>
+ <div class="col-lg-6" style="float:center;">
+   <center><img id="modal-pic-5" src="images/gallery/Image5.jpg" alt="gallery picture" onClick="myFunc(this.id);">  </center>
+   <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும் </h3>
+ </div>
+ <div class="col-lg-6" style="float:center;">
+   <center><img id="modal-pic-6" src="images/gallery/Image6.jpg" alt="gallery picture" onClick="myFunc(this.id);"> </center>
+   <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும்</h3>
+ </div>
+/* 
+
+from here
+
+*/
+
+
+
+
+
+
+
+
+
+//till here
+
 </div>
-            
-            <div class="album text-muted">
-<div class="container">
-<div class="row">
-<div class="card col-lg-6 col-md-12 col-xs-12 ">
-<img src="images/gallery/Image1.jpg" style="width:50%;height:50%;" data-holder-rendered="true" style="display: block;">
 
-<p class="card-text" style="text-align:center;">dgehthdshdfh</p>
+<img  src="images/gallery/Image7.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image8.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image9.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image10.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image11.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image12.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image13.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image14.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image15.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image16.jpg" alt="gallery picture"/>
+<img  src="images/gallery/Image17.jpg" alt="gallery picture"/>
+
+
+
+</div>  
 </div>
-<div class="card  col-lg-6 col-md-12 col-xs-12" style="text-align:center;">
-<img src="" style="width:50%;height:50%;" data-holder-rendered="true" style="display: block;">
-
-<p class="card-text">fsdgwrgsfdgfdhdfhdfhfgjhfjhgj</p>
-</div>
-<div class="card " style="text-align:center;">
-<img src="images/gallery/Image2.jpg" style="width:50%;height:50%;">
-
-<p class="card-text">qwwwwwwaswqedaszf</p>
-</div>
-
 </div>
 
-</div></div>
-            
-<br><br><br><br>
-            <div class="col-lg-6" style="float:center; padding-left: 82px;">
-              <img  src="images/gallery/Image3.jpg" alt="gallery picture" />
-              <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும் </h3>
-              </div>
-            <div class="col-lg-6" style="float:center;padding-left: 160px;  ">
-            <img  src="images/gallery/Image4.jpg" alt="gallery picture"/>
-            <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும்</h3>
-            </div>
-            <br><br><br>
-            <div class="col-lg-6" style="float:center;">
-              <img  src="images/gallery/Image5.jpg" alt="gallery picture" />
-              <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும் </h3>
-              </div>
-            <div class="col-lg-6" style="float:center;">
-            <img  src="images/gallery/Image6.jpg" alt="gallery picture"/>
-            <h3 style="text-align:center;">ராஜாஜியும் டிகேசியும்</h3>
-            </div>
-            </div>
-            
-            <img  src="images/gallery/Image7.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image8.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image9.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image10.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image11.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image12.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image13.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image14.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image15.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image16.jpg" alt="gallery picture"/>
-            <img  src="images/gallery/Image17.jpg" alt="gallery picture"/>
 
-       
-      
-    </div>  
+<script>    
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+    </script>
+    <script src="//cdn.virtuosoft.eu/virtuosoft.eu/resources/jquery.bootstrap-autohidingnavbar.min.js"></script>
+<script src="/code/bootstrap-dropdown-hover/bootstrap-dropdown-hover/v1.0.0/jquery.bootstrap-dropdown-hover.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+      </script>
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
 
 <script>
-        $('#books').click(function() {
-            var myPhoneno = prompt("phoneno Here:", "");
-            $.ajax({
-                url: "http://rasigamanitkc.org/auth.php?phone=" + myPhoneno,
-                success: function(result) {
-                    console.log(result);
-                }
-            });
-        });
+  $('#books').click(function() {
+    var myPhoneno = prompt("phoneno Here:", "");
+    $.ajax({
+      url: "http://rasigamanitkc.org/auth.php?phone=" + myPhoneno,
+      success: function(result) {
+        console.log(result);
+      }
+    });
+  });
 
         // Get the modal
         var modal = document.getElementById('myModal');
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('modal_pic');
-        var modalImg = document.getElementById("modal_content");
-        var captionText = document.getElementById("caption");
-        img.onclick = function() {
+        function myFunc(id){
+          var img = document.getElementById(id);
+          var modalImg = document.getElementById("modal_content");
+          var captionText = document.getElementById("caption");
+
             modal.style.display = "block";
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
+          
+          $('[id^=modal-pic-]').click(function () {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
         }
 
         // Get the <span> element that closes the modal
@@ -254,10 +296,39 @@
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
-            modal.style.display = "none";
+          modal.style.display = "none";
         }
-    </script>
 
-      
-</body>
-</html>
+
+      </script>
+
+      <script >
+        $(document).ready(function(){
+ $("#modal-pic-1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+
+    // Go to the third item
+    $("#modal-pic-2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+$("#modal-pic-3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+
+    // Go to the third item
+    $("#modal-pic-4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+$("#modal-pic-5").click(function(){
+        $("#myCarousel").carousel(4);
+    });
+
+    // Go to the third item
+    $("#modal-pic-6").click(function(){
+        $("#myCarousel").carousel(5);
+    });
+});
+      </script>
+    </body>
+    </html>
