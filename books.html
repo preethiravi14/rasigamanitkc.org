@@ -176,9 +176,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #000;">x</span>
         <h5 class="modal-title">Please enter your phone number so that we can invite you</h5>
-         <span class="close" onclick="document.getElementById('myModal').style.display='none'" style="color: #fff;">x</span>
-        </button>
       </div>
       <div class="modal-body">
         <div class="input-group">
@@ -188,7 +187,7 @@
       </div>
       <div class="modal-footer">
         <button id="save" type="button" class="btn btn-primary">Save changes</button>
-        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="close" type="button" class="btn btn-secondary" onclick="document.getElementById('myModal').style.display='none'">Close</button>
       </div>
     </div>
   </div>
@@ -199,9 +198,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <span class="close" onclick="document.getElementById('detailsModal').style.display='none'" style="color: #000;">x</span>
         <h5 class="modal-title">Hi there, it seems you are new here! Please enter your details</h5>
-         <span class="close" onclick="document.getElementById('detailsModal').style.display='none'" style="color: #fff;">x</span>
-        </button>
       </div>
       <div class="modal-body">
         <div class="input-group">
@@ -223,7 +221,7 @@
       </div>
       <div class="modal-footer">
         <button id="saveDetails" type="button" class="btn btn-primary">Save changes</button>
-        <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="closeModal" type="button" class="btn btn-secondary" onclick="document.getElementById('detailsModal').style.display='none'">Close</button>
       </div>
     </div>
   </div>

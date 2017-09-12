@@ -1,10 +1,6 @@
 ﻿
 function myBookFunction(id){
   var modal = document.getElementById('myModal');
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
   modal.style.display = "block";
   var save = document.getElementById("save");
   save.onclick = function() {
@@ -18,7 +14,7 @@ function myBookFunction(id){
       type: 'json',
       success: function(data){
         if(data == 'success'){
-          window.location.href = 'https://drive.google.com/open?id='+id;
+          window.location = "http://rasigamanitkc.org/books1.html";
         }else{
           getPrompt(myPhoneno, id);
         }
@@ -30,10 +26,6 @@ function myBookFunction(id){
 
 function getPrompt(myPhoneno, id){
   var modal = document.getElementById('detailsModal');
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
   modal.style.display = "block";
   var save = document.getElementById("saveDetails");
   save.onclick = function() {
@@ -49,7 +41,7 @@ function getPrompt(myPhoneno, id){
       success: function(data){
         console.log(data);
         if(data == 'success'){
-          window.location.href = 'https://drive.google.com/open?id='+id;
+          window.location = "http://rasigamanitkc.org/books1.html";
         }else{
           alert("Something went wrong. Please try again!");
           console.log("Something went wrong. Please try again!");
